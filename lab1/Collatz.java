@@ -23,5 +23,15 @@ public class Collatz {
         }
         System.out.println();
     }
+
+    public static Object NextNumber(int n) {
+        if (n%2 == 0){
+            return n/2;
+        } else if (n%2 != 1){
+            return 3 * n+1;
+        } else {
+            return "NO next number";
+        }
+    }
 }
 
